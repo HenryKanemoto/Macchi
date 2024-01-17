@@ -1,0 +1,210 @@
+:root{
+    --cor-principal: #F92727;
+    --cor-secundaria: #e6e6e6;
+    --cor-terciaria: #DC3545;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Krona One', sans-serif;
+}
+::-webkit-scrollbar{
+    background-color: black;
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-principal);
+}
+*{
+    font-family: var(--fonte-titulo);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-family: var(--fonte-texto);
+}
+
+
+.cabecalho{
+    background-color: var(--cor-principal);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.slide_descricao{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-volks{
+    color: rgb(72, 100, 254);
+}
+.text-ford{
+    color: rgb(0, 0, 255);
+}
+
+.vendas_mobile{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+.background1{
+    background-image: url(./assets/img/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.noticia{
+    width: 100%;
+    height: 100%;
+}
+
+.noticias_text{
+    background-color: rgba(255, 255, 255, .7);
+    width: 100%;
+
+}
+.notcias_p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.background2{
+    background-image: url(./assets/img/background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 75vh;
+}
+.background2_text{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.rodape{
+    background-color: var(--cor-principal);
+    margin-top: 10rem;
+}
+.rodape_link{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.carros_main{
+    background-image: url(./assets/img/background2.jpeg);
+}
+.carros_titulo{
+    background-color: var(--cor-principal);
+    color: white;
+    border: 1px solid black;
+}
+.carro_lista{
+    margin: 0 10% 0 10%;
+}
+.carros_section{
+    margin: 6rem 0 6rem 0;
+    background-color: var(--cor-secundaria);
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: 50vw;
+
+}
+.card-body{
+    width: 100%;
+    height: 60vw;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+
+.compra_section{
+    height: 300px;
+}
+
+.accordion{
+    --bs-accordion-btn-bg:var(--cor-terciaria);
+    --bs-accordion-active-bg:var(--cor-principal);
+    --bs-accordion-bg:var(--cor-secundaria);
+}
+
+
+.background3{
+    background-image: url(./assets/img/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+.ofertas_img{
+    width: 100%;
+}
+.ofertas_div{
+    background-color: var(--cor-secundaria);
+    height: 50vh;
+    overflow-y: auto;
+}
+
+
+
+@media (min-width: 425px){
+    .background1{
+        flex-direction: row;
+    }
+    .noticias_text{
+        width: 40%;
+        
+    }
+    .noticias_link{
+        width: 60%;
+        height: 30%;
+    }    
+    .ofertas_img{
+        width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .slide_item{
+        height: 75vh;
+    }
+    .noticias_link{
+        width: 50%;
+        height: 60%;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 268px;
+    
+    }
+    .card-body{
+        width: 268px;
+        height: 300px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .compra_img{
+        width: 120%;
+    }
+}
